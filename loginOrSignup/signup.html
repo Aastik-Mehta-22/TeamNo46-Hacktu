@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <div id="container">
+        <div id="item1" style="position: relative; padding: 130px;">
+            <img src="../images/logo.png" style="position: absolute; top: -31px; left: -138px; width: 156%; height: 131%;" /> 
+        </div>
+    </div>
+      <!-- <p class="credit">Developed by <a href="http://www.designtheway.com" target="_blank">Design the way</a></p> -->
+    <div class="wrapper">
+        <img src="" alt="" style="position: absolute;">
+        <div class="form-wrapper login">
+            <form action="connect.php" method="post">
+                <h2 style="padding-top: 30px;">Signup</h2>
+                <!-- name -->
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="text" placeholder="Name" required name="firstName">
+                </div>
+                <!-- email -->
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" placeholder="Email" required name="email">
+                </div>
+                <!-- phone no -->
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="number" placeholder="Ph Number" required name="number">
+                </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input type="password" placeholder="password" required name="password">
+            </div>
+                <button type="submit">Sign up</button>
+                <div class="sign-link">
+                    <p>Already have an account? <a href="loginpage.html">Login</a></p>
+                </div> 
+            </form>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+        import { getAuth, signInWithCustomToken } from "firebase/auth";
+
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDpCZ4X3IfKk4UNygIrbC7krN-SClMJtlg",
+          authDomain: "hackathon-3675d.firebaseapp.com",
+          projectId: "hackathon-3675d",
+          storageBucket: "hackathon-3675d.appspot.com",
+          messagingSenderId: "614693790377",
+          appId: "1:614693790377:web:1f596588f6c5e929117fb8",
+          measurementId: "G-MJ4ZTSKGNG"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const auth = getAuth();
+        // console.log(app);
+      </script>
+</body>
+</html>

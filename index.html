@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Svaasthy</title>
+    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@1,700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@1,700&family=Libre+Baskerville:wght@700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:wght@500&family=Lato:ital,wght@1,700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:ital,wght@1,300&family=Oswald&family=Sevillana&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:ital,wght@1,300&family=Oswald&family=Sevillana&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:ital,wght@1,300&family=Oswald&family=Sevillana&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img class="logo" src="images/logo-img.png" alt="svaasthy Logo" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <!-- <li><a href="#" class="main-nav-link">How it works</a></li> -->
+          <li><a href="./Services/services.html" target="_blank" class="main-nav-link">Services</a></li>
+          <li><a href="#about-section" class="main-nav-link">About Us</a></li>
+          <li><a href="#h" class="main-nav-link">Esteemed hospitals</a></li>
+
+          <li><a href="./faq/faq.html" target="_blank" class="main-nav-link">FAQ</a></li>
+          <li>
+            <a href="loginOrSignup/loginpage.html" class="main-nav-link nav-cta" target="_blank">Login</a>
+            <a href="./feedbackForm/feedback.html" class="main-nav-link nav-cta" style="margin-left: 20px;" target="_blank">Feedback</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              <strong>Svaasthy</strong>, your personalized healthcare companion.
+            </h1>
+            <p class="hero-description">
+              <br />Whether you're searching for the nearest hospital, booking
+              an appointment with a specialist, or seeking expert health advice,
+              we've got you covered.
+            </p>
+            <a href="./loginOrSignup/signup.html" class="btn btn--full margin-right-sm" target="_blank"> Sign Up Now </a>
+            <a href="./learnmorebutton/learnmore.html" target="_blank" class="btn btn--outline">Learn more</a>
+            <div class="delivered-meals">
+              <div class="delivered-imgs">
+                <img src="images/customer-1.jpg" alt="Customer Photo" />
+                <img src="images/customer-2.jpg" alt="Customer Photo" />
+                <img src="images/customer-3.jpg" alt="Customer Photo" />
+                <img src="images/customer-4.jpg" alt="Customer Photo" />
+                <img src="images/customer-5.jpg" alt="Customer Photo" />
+                <img src="images/customer-6.jpg" alt="Customer Photo" />
+                <p class="delivered-text">
+                  <span>1300+ </span>patients served last year!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-img-box">
+            <img
+              src="images/hero4.png"
+              class="hero-img"
+              alt="patient finding a doctor on Svaasthy"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- <div class="chat-container">
+        <div class="chat-box" id="chat-box"></div>
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+    </div> -->
+    <script src="script.js"></script>
+      <section class="section-step">
+        <div class="step-text">
+          <h3>Get Your Medical Assistance in 4 Quick and Easy Steps:</h3>
+        </div>
+
+        <div class="steps-block">
+          <div class="steps">
+            <h3>1</h3>
+            <h4>Select Date & Time</h4>
+            <p>Schedule the best time for your virtual appointment</p>
+          </div>
+          <div class="steps-icon">
+            <ion-icon
+              name="caret-forward-outline"
+              class="forward-icon"
+            ></ion-icon>
+          </div>
+          <div class="steps">
+            <h3>2</h3>
+            <h4>Submit Form</h4>
+            <p>Complete the quick patient form</p>
+          </div>
+          <div class="steps-icon">
+            <ion-icon
+              name="caret-forward-outline"
+              class="forward-icon"
+            ></ion-icon>
+          </div>
+          <div class="steps">
+            <h3>3</h3>
+            <h4>See Doctor Virtually</h4>
+            <p>Meet with your board-certified doctor virtually</p>
+          </div>
+          <div class="steps-icon">
+            <ion-icon
+              name="caret-forward-outline"
+              class="forward-icon"
+            ></ion-icon>
+          </div>
+          <div class="steps">
+            <h3>4</h3>
+            <h4>State Application</h4>
+            <p>Complete your local state application and you're done!</p>
+          </div>
+        </div>
+      </section>
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      ></script>
+
+      <section class="section-db">
+        <div class="db_container">
+          <div class="db-text"></div>
+          <div class="db-cards-cols" id="h">
+            <div class="db-cards">
+              <div class="card">
+                <div>
+                  <img
+                    src="images/neelam.png"
+                    alt="Neelam Hospital"
+                    class="card-img"
+                  />
+                </div>
+                <div class="card-text">
+                  <h3 class="card-title">Neelam Hospital</h3>
+                </div>
+                <h4 class="card-subheading">Rajpura</h4>
+              </div>
+              <div class="card">
+                <div>
+                  <img src="images/dmc.png" alt="DMC Hospital" class="card-img" />
+                </div>
+                <div class="card-text">
+                  <h3 class="card-title">DMC Hospital</h3>
+                </div>
+                <h4 class="card-subheading">Ludhiana</h4>
+              </div>
+
+              <div class="card">
+                <div>
+                  <img
+                    src="images/laksmi_bai.png"
+                    alt="Laksmi-Bai Hospital"
+                    class="card-img"
+                  />
+                </div>
+                <div class="card-text">
+                  <h3 class="card-title">Laksmi-Bai Hospital</h3>
+                </div>
+                <h4 class="card-subheading">New Delhi</h4>
+              </div>
+              <div class="card">
+                <div>
+                  <img
+                    src="images/Artemis.png"
+                    alt="Artemis Hospital"
+                    class="card-img"
+                  />
+                </div>
+                <div class="card-text">
+                  <h3 class="card-title">Artemis Hospital</h3>
+                </div>
+                <h4 class="card-subheading">New Delhi</h4>
+              </div>
+            </div>
+            <div class="db-cards">
+              <div class="card">
+                <div>
+                  <img
+                    src="images/ayu_chd.png"
+                    alt="Ayu Hospital"
+                    class="card-img"
+                  />
+                </div>
+                <div class="card-text">
+                  <h3 class="card-title">Ayu Hospital</h3>
+                </div>
+                <h4 class="card-subheading">Chandigarh</h4>
+              </div>
+              <div class="card">
+                <div>
+                  <img
+                    src="img/medicare_hoshiarpur.png"
+                    alt="Medicare Hospital"
+                    class="card-img"
+                  />
+                </div>
+                <div class="card-text">
+                  <h3 class="card-title">Medicare Hospital</h3>
+                </div>
+                <h4 class="card-subheading">Hoshiarpur</h4>
+              </div>
+              <div class="card">
+                <div>
+                  <img
+                    src="img/healing_chd.png"
+                    alt="Healing Hospital"
+                    class="card-img"
+                  />
+                </div>
+                <div class="card-text">
+                  <h3 class="card-title">Healing Hospital</h3>
+                </div>
+                <h4 class="card-subheading">Chandigarh</h4>
+              </div>
+              <div class="card">
+                <div>
+                  <img
+                    src="img/amcare_zirakpur.png"
+                    alt="Amcare Hospital"
+                    class="card-img"
+                  />
+                </div>
+                <div class="card-text">
+                  <h3 class="card-title">Amcare Hospital</h3>
+                </div>
+                <h4 class="card-subheading">Zirakpur</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about-section">
+        <div  id="about">
+            <h1 class="heading">About Us</h1>
+            <!-- <h2 class="logo-name" >Svaasthy</h2> -->
+            <p style="font-size: 2rem;"> <b>“Svaasthy”</b>is a thread that binds together all health-care facilities , including blood banks , pharmaceutical facilities and medical officers.</p>
+            <p>You enter the medical realm , as soon as you register your information , where you can meet doctors (even virtually) learn about your X-rays , find out your BMI, and more.
+              Well other than that , Svaasthy works on the newest technology of artificial intelligence through its ”health discernment system” bar which diagnoses your disease through photographs.
+              “Svaasthy” is a go-to health care  website which presents you the access to every medical facility over your tech-devices.Keeping GOVERNMENT HEALTH INSURANCE SCHEMES under concerns , Svaasthy provides assistance to patients so as they can avail the benefit from it.
+              <br><br> <strong style="font-size: 2rem;">Connect with Svaasthy to choose YOU over everything</strong>
+              
+            </p>
+        </div>        
+      </section>
+      <section class="contact" id="contacts">
+        <div class="container">
+          <br>
+          <br><br><br><br>
+          <h1 class="section-heading" style="padding-top: 5rem; padding-bottom: 4rem; font-size: 2rem;" >Contact <span style="font-size: 2rem;">Us</span></h1>
+          <div class="contactcard-wrapper">
+            <div class="contactcard">
+              <img src="./images/phone.jpg" width="100px" alt="">
+              <h1>Contact Number</h1>
+              <h6>+91 9896192975</h6>
+            </div>
+            <div class="contactcard">
+              <a target="_blank" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=VpCqJQwCxRdDFxgCTRvhSnGDlSWcSxdMCggmsmHvvqnGpqSXQtckzTCVNWSDNHdLmVBWNCv">
+              <img src="./images/email.png" width="100px" alt="">
+            </a>
+              <h1>Email Id</h1>
+              <h6>mehtaaastik12@gmail.com</h6>
+            </div>
+            <div class="contactcard">
+              <img src="./images/addres.jpg" width="100px"  alt="">
+              <h1> Head Office</h1>
+              <h6>Thapar University,Patiala <br> Pin - 140401</h6>
+            </div>
+          </div>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="c635daa7-d187-4a3c-ad10-fdcc5dabd72f">
+            <div class="input-wrap">
+              <input type="text" placeholder="Your Name " name="name" required>
+              <input type="email" placeholder="Your Email" name="email" required>
+            </div>
+          <div class="input-wrap2">
+              <input type="text" placeholder="Your Subject" name="subject">
+              <textarea name="" id="" cols="30" rows="10" placeholder="Your Message..." name="msg"></textarea>
+          </div>
+          
+          <div class="btn-contact">
+            <button class="msgbtn">Send Message</button>
+          </div>
+          </form>
+      
+        </div>
+      </section>
+       
+
+      <footer>
+        <img class="footer-logo" src="./images/logo.png" alt="">
+        <div class="footer-socials">
+          <a href=""><i class="fa-solid fa-globe"></i></a>
+          <a href="https://www.linkedin.com/in/aastik-mehta-145a50258/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/mehta_aastikk/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="copyright">
+          Copyright 2024 &copy; Svaasthy. All Rights Reserved.
+        </div>
+      
+      </footer>
+    </main>
+    </body>
+    <script src="script.js"></script>
+    </html>

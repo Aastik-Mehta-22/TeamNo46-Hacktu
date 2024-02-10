@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; 
+    color: #333; 
+    margin: 20px;
+}
+.feedback{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);   
+    font-size: 700;
+}
+
+h1 {
+    color: #000000; 
+    text-align: center;
+}
+
+form {
+    background-color: #dfedb9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);    
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box
+}
+.Submit{
+    transition: all 0.3s ease;
+}
+.Submit:hover{
+    transform: scale(1.1);
+}
+
+.Preview{
+    transition: all 0.3s ease;
+}
+.Preview:hover{
+    transform: scale(1.1);
+} 
+
+.reset{
+    transition: all 0.3s ease;
+}
+.reset:hover{
+    transform: scale(1.1);
+}
+
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+}
+.rating > input {
+    display: none;
+}
+.rating > label {
+    display: inline-block;
+    padding: 5px;
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+}
+.rating > input:checked ~ label,
+.rating > input:checked ~ label ~ label {
+    color: black;
+}
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label {
+    color: black;
+}

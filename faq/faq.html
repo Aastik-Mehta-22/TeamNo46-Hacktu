@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions</title>
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    
+    <style>
+        /* Default styles for all list items */
+        li {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            cursor: pointer;
+            background-color: #dfedb9; /* Default background color */
+        }
+
+        /* Hover effect for all list items */
+        li:hover {
+            background-color: #dce9bc;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* Clicked state for list items */
+        .faq-item.clicked {
+            background-color: #b1d8f9;
+        }
+        h2 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2>FREQUENTLY ASKED QUESTIONS</h2>
+    <ol>
+        <li class="faq-item faq-item1">
+            <strong>Is Svaasthy suite the right option for us as healthcare providers?</strong>
+            <p class="p1">Svaasthy is the right solution for you if you are not using the most advanced hospital management system or web-based hospital management system. This ultra-modern hospital management system uses license-free software, brings down the total cost of ownership of the product, and improves the overall productivity of the organization by bringing in quality practices.</p>
+        </li>
+        <li class="faq-item faq-item2">
+            <strong>How can I view a Demo?</strong>
+            <p>You can view a demo by scheduling an appointment with us. You can schedule an appointment by sending your request to us on <a href="../index.html">svaasthy@gmail.com</a>.</p>
+        </li>
+        <!-- Add more list items with different classes as needed -->
+        <li class="faq-item faq-item3">
+            <strong>How much does Svaasty suite cost?</strong>
+            <p>Due to varying needs of healthcare providers and high levels of customization, we are not able to list the actual cost of Svaasthy suite. But you can contact us to discuss your requirements and to get a detailed quotation for the same.</p>
+        </li>
+        <li class="faq-item faq-item4">
+            <strong>Does Svaasthy provide training sessions?</strong>
+            <p>Yes, Svaasthy provides training to all users as per the defined user role such as doctors, nurses, executives, lab technicians, billing and finance, HR, etc. Apart from practical in-person training, Svaasthy also offers help manuals and video tutorials for better understanding and improved efficiency.</p>
+        </li>
+        <li class="faq-item faq-item5">
+            <strong>Is there any online support facility available?</strong>
+            <p>Svaasthy has a dedicated team of support executives who can be reached through telephone, remote connection, Skype, or online chat. All the complaints raised within SevenHills e-Health Suite are reviewed and escalated to the support team who will work for you to solve the issue at the earliest.</p>
+        </li>
+        <li class="faq-item faq-item6">
+            <strong>Is any specific knowledge required for using Svaasthy?</strong>
+            <p>No, there isn't any such requirement for using Svaathy Suite. As the application is developed in a user-friendly structure, even a novice user can easily operate the system.</p>
+        </li>
+        <li class="faq-item faq-item7">
+            <strong>Can I manage users and their access controls?</strong>
+            <p>The Svaasthy Suite provides benefits to the administrator, who will be able to manage all users, define their roles and assign required access to the system. It will also provide access to all data and reports such as login log files, MIS reports, and so on.</p>
+        </li>
+
+    </ol>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    faqItems.forEach(item => {
+                        item.classList.remove('clicked');
+                    });
+                    this.classList.add('clicked');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
