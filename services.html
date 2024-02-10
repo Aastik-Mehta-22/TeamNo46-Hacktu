@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <style>
+        body {
+            background-image: linear-gradient(to right bottom, #d4e7a2, #f6faec);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            font-family: "Rubik", sans-serif;
+        }
+
+        .service-image {
+            width: 50px;
+        }
+
+        .service {
+            width: 300px;
+            background-color: white;
+            display: flex;
+            padding: 5px 10px;
+            justify-content: space-evenly;
+            background-color: #86a637;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 5px 5px 15px grey;
+            text-decoration: none;
+        }
+
+        .service h4 {
+            font-size: large;
+        }
+
+        .main-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 70%;
+            height: 60vh;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+    </style>
+
+    <!-- Font awesome for icons -->
+    <script src="https://kit.fontawesome.com/2a9cc83bd0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-section">
+        <h1>Services</h1>
+        <div class="services">
+            <a href="../bmi/bmi.html" class="service" target="_blank">
+                <img src="../images/bmi2.png" alt="bmi-image" class="service-image">
+                <h4>BMI Calculator</h4>
+            </a>
+            <a href="./BloodBank/index.html" class="service" target="_blank">
+                <img src="../images/blood.png"
+                    alt="bmi-image" class="service-image">
+                <h4>Blood Bank</h4>
+            </a>
+            <a href="./svaasthyStore/stores.html" class="service" target="_blank">
+                <img src="../images/Store.png"
+                    alt="bmi-image" class="service-image">
+                <h4>Svaasthya Store</h4>
+            </a>
+            <a href="./virtualMeet/gmeetpatient.html" class="service" target="_blank">
+                <img src="../images/bmi2.png" alt="bmi-image" class="service-image">
+                <h4>Meeting With Doctor</h4>
+            </a>
+            <a href="./filterByspecs/filter.html" class="service">
+                <img src="../images/doctorimage.png"
+                    alt="bmi-image" class="service-image">
+                <h4>Filter By Specilization</h4>
+            </a>
+            <a href="./govtSchemes/gscheme.html" class="service" target="_blank">
+                <img src="../images/govt.jpeg"
+                    alt="bmi-image" class="service-image">
+                <h4>Govt Schemes</h4>
+            </a>
+            <a href="./intern/internship.html" class="service" target="_blank">
+                <img src="../images/doctorimage.png"
+                    alt="bmi-image" class="service-image">
+                <h4>Work Under Senior Doctor</h4>
+            </a>
+            <a href="" class="service" target="_blank">
+                <img src="../images/bed.jpeg"
+                    alt="bmi-image" class="service-image">
+                <h4>Availability Of Hospital Beds </h4>
+            </a>
+            <!-- <a href="chatbot.html" class="service" target="_blank">
+                <img src="./images/doctorimage.png"
+                    alt="bmi-image" class="service-image">
+                <h4>ChatBot</h4>
+            </a> -->
+        </div>
+    </div>
+</body>
+
+</html>
